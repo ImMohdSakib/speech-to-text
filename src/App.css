@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  border: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.content {
+  width: 26%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+select {
+  border: none;
+}
+
+.mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 130px;
+  font-size: 100px;
+  border: none;
+  background-color: rgb(61, 61, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 50%;
+  color: white;
+}
+.mic-content {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mic-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.little-box {
+  text-align: center;
+  height: 35vh;
+  width: 100%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+.transcript {
+  height: 20vh;
+  top: 35px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  position: absolute;
+  padding: 5px;
+}
+
+.little-box strong {
+  font-size: 20px;
+}
+.copy-delete-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+.copy-delete-buttons button {
+  border: none;
+  background-color: #f3433b;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.cpy button {
+  background-color: #fcee88;
+}
+
+.save-btn button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 1032px) {
+  .content {
+    width: 90%;
+  }
+}
